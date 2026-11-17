@@ -57,7 +57,7 @@ public class House extends Asset {
     }
 
     public void setCondition(int condition) {
-        this.condition = condition;
+        this.condition = checkedCondition(condition);
     }
 
     public int getSquareFoot() {
