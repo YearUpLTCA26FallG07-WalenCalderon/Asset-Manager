@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Asset {
+public abstract class Asset {
     private String description;
     private String dateAcquired;
     private BigDecimal originalCost;
@@ -12,9 +12,7 @@ public class Asset {
     }
 
     // returns original cost
-   public BigDecimal getValue(){
-       return this.originalCost;
-   }
+   public abstract BigDecimal getValue();
 
 
     public String getDescription() {
